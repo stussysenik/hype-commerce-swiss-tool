@@ -172,6 +172,22 @@ All 13 phases (103 tasks) complete:
 - [x] Phase 12: Deployment & monitoring (Vercel, Sentry, analytics)
 - [x] Phase 13: Documentation
 
+## External Services Setup
+
+To run in production, provision these services:
+
+| Service    | Recommended Provider                                                                        | Purpose                            |
+| ---------- | ------------------------------------------------------------------------------------------- | ---------------------------------- |
+| PostgreSQL | [Railway](https://railway.app), [Neon](https://neon.tech), [Supabase](https://supabase.com) | User data, drop entries, analytics |
+| Redis      | [Upstash](https://upstash.com), [Railway](https://railway.app)                              | Queue system, rate limiting        |
+| Shopify    | [Shopify Partners](https://partners.shopify.com)                                            | Products, cart, checkout           |
+| Sanity     | [Sanity.io](https://sanity.io)                                                              | CMS for editorial content          |
+| Hosting    | [Vercel](https://vercel.com)                                                                | Frontend deployment                |
+| Email      | [Resend](https://resend.com), [SendGrid](https://sendgrid.com)                              | Raffle notifications               |
+| Images     | [Cloudinary](https://cloudinary.com)                                                        | Image optimization                 |
+| Errors     | [Sentry](https://sentry.io)                                                                 | Error tracking                     |
+| CAPTCHA    | [Turnstile](https://developers.cloudflare.com/turnstile)                                    | Bot protection                     |
+
 ## License
 
 MIT
