@@ -79,13 +79,13 @@
 
 ## 8. Raffle System
 
-- [ ] 8.1 Create raffle entry endpoint with email validation
-- [ ] 8.2 Implement duplicate entry prevention
-- [ ] 8.3 Create provably random winner selection using crypto
-- [ ] 8.4 Generate time-limited purchase links (24-hour expiry)
-- [ ] 8.5 Implement winner notification email
-- [ ] 8.6 Implement loser notification with waitlist
-- [ ] 8.7 Create raffle dashboard queries for marketing
+- [x] 8.1 Create raffle entry endpoint with email validation
+- [x] 8.2 Implement duplicate entry prevention
+- [x] 8.3 Create provably random winner selection using crypto
+- [x] 8.4 Generate time-limited purchase links (24-hour expiry)
+- [x] 8.5 Implement winner notification email
+- [x] 8.6 Implement loser notification with waitlist
+- [x] 8.7 Create raffle dashboard queries for marketing
 
 ## 9. Sanity CMS Integration
 
