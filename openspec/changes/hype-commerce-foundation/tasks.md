@@ -22,13 +22,13 @@
 
 ## 3. Section Components
 
-- [ ] 3.1 Create Hero section component with video background support
-- [ ] 3.2 Create Product Grid section with filter sidebar
-- [ ] 3.3 Create Editorial Split section (50/50 image/text)
-- [ ] 3.4 Create Timeline section for drop calendar
-- [ ] 3.5 Create Newsletter section with email capture
-- [ ] 3.6 Create Testimonial Carousel section
-- [ ] 3.7 Add Storybook stories for all section components
+- [x] 3.1 Create Hero section component with video background support
+- [x] 3.2 Create Product Grid section with filter sidebar
+- [x] 3.3 Create Editorial Split section (50/50 image/text)
+- [x] 3.4 Create Timeline section for drop calendar
+- [x] 3.5 Create Newsletter section with email capture
+- [x] 3.6 Create Testimonial Carousel section
+- [x] 3.7 Add Storybook stories for all section components
 
 ## 4. Database Layer
 
