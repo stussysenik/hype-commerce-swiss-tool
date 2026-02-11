@@ -68,14 +68,14 @@
 
 ## 7. Redis Queue System
 
-- [ ] 7.1 Set up Redis client with connection pooling
-- [ ] 7.2 Install and configure BullMQ
-- [ ] 7.3 Create drop queue with FIFO ordering
-- [ ] 7.4 Implement queue position lookup
-- [ ] 7.5 Implement purchase window timer (10 minutes)
-- [ ] 7.6 Create WebSocket endpoint for position updates
-- [ ] 7.7 Implement polling fallback for position updates
-- [ ] 7.8 Add rate limiting (10 req/min for queue entry)
+- [x] 7.1 Set up Redis client with connection pooling
+- [x] 7.2 Install and configure BullMQ
+- [x] 7.3 Create drop queue with FIFO ordering
+- [x] 7.4 Implement queue position lookup
+- [x] 7.5 Implement purchase window timer (10 minutes)
+- [x] 7.6 Create WebSocket endpoint for position updates
+- [x] 7.7 Implement polling fallback for position updates
+- [x] 7.8 Add rate limiting (10 req/min for queue entry)
 
 ## 8. Raffle System
 
