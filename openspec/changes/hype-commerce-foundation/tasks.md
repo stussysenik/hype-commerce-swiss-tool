@@ -133,9 +133,9 @@
 
 ## 13. Documentation
 
-- [ ] 13.1 Update README with complete setup instructions
-- [ ] 13.2 Create docs/components.md for component development guide
-- [ ] 13.3 Create docs/api.md for tRPC and Shopify integration
-- [ ] 13.4 Create docs/drops.md for queue and raffle system
-- [ ] 13.5 Create docs/deployment.md for Vercel and Railway setup
-- [ ] 13.6 Update PROGRESS.md with all completed work
+- [x] 13.1 Update README with complete setup instructions
+- [x] 13.2 Create docs/components.md for component development guide
+- [x] 13.3 Create docs/api.md for tRPC and Shopify integration
+- [x] 13.4 Create docs/drops.md for queue and raffle system
+- [x] 13.5 Create docs/deployment.md for Vercel and Railway setup
+- [x] 13.6 Update PROGRESS.md with all completed work

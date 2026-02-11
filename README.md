@@ -148,29 +148,29 @@ pnpm storybook    # Start Storybook
 
 ## Documentation
 
-- [DOCS.md](./DOCS.md) - Detailed technical documentation
+- [docs/components.md](./docs/components.md) - Component development guide
+- [docs/api.md](./docs/api.md) - tRPC and Shopify API reference
+- [docs/drops.md](./docs/drops.md) - Queue and raffle system guide
+- [docs/deployment.md](./docs/deployment.md) - Vercel deployment guide
 - [openspec/](./openspec/) - Architecture decisions and specifications
 
 ## Implementation Progress
 
-### Completed (Phases 1-9)
+All 13 phases (103 tasks) complete:
 
-- [x] Development environment (Nix, ESLint, Prettier, Husky)
-- [x] Component library (shadcn-svelte, Storybook)
-- [x] Section components (Hero, ProductGrid, Editorial, Timeline)
-- [x] Database layer (Drizzle ORM, PostgreSQL schema)
-- [x] Shopify integration (Storefront API, TanStack Query)
-- [x] tRPC API layer (drops, user, analytics routers)
-- [x] Redis queue system (BullMQ, position updates)
-- [x] Raffle system (random selection, purchase links)
-- [x] Sanity CMS integration (content models, GROQ queries)
-
-### In Progress (Phases 10-13)
-
-- [ ] Page routes (homepage, collections, products, drops)
-- [ ] Performance & security (caching, rate limiting, CAPTCHA)
-- [ ] Deployment (Vercel, monitoring, error tracking)
-- [ ] Documentation updates
+- [x] Phase 1: Development environment (Nix, ESLint, Prettier, Husky)
+- [x] Phase 2: Component library (shadcn-svelte, Storybook)
+- [x] Phase 3: Section components (Hero, ProductGrid, Editorial, Timeline)
+- [x] Phase 4: Database layer (Drizzle ORM, PostgreSQL schema)
+- [x] Phase 5: Shopify integration (Storefront API, TanStack Query)
+- [x] Phase 6: tRPC API layer (drops, user, analytics routers)
+- [x] Phase 7: Redis queue system (BullMQ, position updates)
+- [x] Phase 8: Raffle system (random selection, purchase links)
+- [x] Phase 9: Sanity CMS integration (content models, GROQ queries)
+- [x] Phase 10: Page routes (homepage, collections, products, drops, cart)
+- [x] Phase 11: Performance & security (Cloudinary, caching, Turnstile, sessions)
+- [x] Phase 12: Deployment & monitoring (Vercel, Sentry, analytics)
+- [x] Phase 13: Documentation
 
 ## License
 
