@@ -188,6 +188,45 @@ To run in production, provision these services:
 | Errors     | [Sentry](https://sentry.io)                                                                 | Error tracking                     |
 | CAPTCHA    | [Turnstile](https://developers.cloudflare.com/turnstile)                                    | Bot protection                     |
 
+## Analytics & Tracking
+
+### Built-in Analytics
+
+The `analytics_events` table captures user behavior with JSONB metadata:
+
+```typescript
+// Track custom events via tRPC
+await trpc.analytics.track.event.mutate({
+	eventType: 'drop_view',
+	metadata: { dropId: 'ss25-capsule', source: 'homepage' },
+});
+```
+
+### Vercel Analytics
+
+Already configured. Enable in Vercel dashboard under Project Settings → Analytics.
+
+### Third-Party Integration
+
+Add these to enhance analytics:
+
+| Tool                                               | Purpose                            | Integration                          |
+| -------------------------------------------------- | ---------------------------------- | ------------------------------------ |
+| [Mixpanel](https://mixpanel.com)                   | Product analytics, funnels         | Add SDK, track via `analytics.track` |
+| [Plausible](https://plausible.io)                  | Privacy-friendly web analytics     | Script tag in `app.html`             |
+| [PostHog](https://posthog.com)                     | Product analytics + session replay | SDK + feature flags                  |
+| [Google Analytics 4](https://analytics.google.com) | Web analytics                      | gtag.js in `app.html`                |
+| [Segment](https://segment.com)                     | Customer data platform             | Unified tracking SDK                 |
+
+### Marketing Export
+
+Export analytics for marketing teams:
+
+```bash
+# Via tRPC endpoint
+curl /api/trpc/analytics.export.csv?startDate=2024-01-01&endDate=2024-01-31
+```
+
 ## License
 
 MIT
