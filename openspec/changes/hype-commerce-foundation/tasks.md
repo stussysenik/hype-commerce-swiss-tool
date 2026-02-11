@@ -89,13 +89,13 @@
 
 ## 9. Sanity CMS Integration
 
-- [ ] 9.1 Create Sanity project and configure client
-- [ ] 9.2 Define Drop Story content model
-- [ ] 9.3 Define Editorial Article content model
-- [ ] 9.4 Define Global Settings content model
-- [ ] 9.5 Set up Sanity Studio at /studio route
-- [ ] 9.6 Create GROQ queries for content fetching
-- [ ] 9.7 Implement preview mode for draft content
+- [x] 9.1 Create Sanity project and configure client
+- [x] 9.2 Define Drop Story content model
+- [x] 9.3 Define Editorial Article content model
+- [x] 9.4 Define Global Settings content model
+- [x] 9.5 Set up Sanity Studio at /studio route
+- [x] 9.6 Create GROQ queries for content fetching
+- [x] 9.7 Implement preview mode for draft content
 
 ## 10. Page Routes
 
