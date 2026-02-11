@@ -123,13 +123,13 @@
 
 ## 12. Deployment & Monitoring
 
-- [ ] 12.1 Configure adapter-vercel for SvelteKit
-- [ ] 12.2 Set up Vercel project with environment variables
-- [ ] 12.3 Configure preview deployments for PRs
-- [ ] 12.4 Set up Sentry error tracking with source maps
-- [ ] 12.5 Create error boundary components
-- [ ] 12.6 Enable Vercel Analytics for Web Vitals
-- [ ] 12.7 Configure health check for uptime monitoring
+- [x] 12.1 Configure adapter-vercel for SvelteKit
+- [x] 12.2 Set up Vercel project with environment variables
+- [x] 12.3 Configure preview deployments for PRs
+- [x] 12.4 Set up Sentry error tracking with source maps
+- [x] 12.5 Create error boundary components
+- [x] 12.6 Enable Vercel Analytics for Web Vitals
+- [x] 12.7 Configure health check for uptime monitoring
 
 ## 13. Documentation
 
