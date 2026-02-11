@@ -32,15 +32,15 @@
 
 ## 4. Database Layer
 
-- [ ] 4.1 Set up Drizzle ORM with PostgreSQL driver
-- [ ] 4.2 Create users table schema
-- [ ] 4.3 Create drops table schema
-- [ ] 4.4 Create drop_entries table schema with status enum
-- [ ] 4.5 Create wishlists table schema
-- [ ] 4.6 Create analytics_events table with JSONB metadata
-- [ ] 4.7 Create marketing_drop_performance view
-- [ ] 4.8 Configure Drizzle Kit for migrations
-- [ ] 4.9 Generate initial migration and test db:push
+- [x] 4.1 Set up Drizzle ORM with PostgreSQL driver
+- [x] 4.2 Create users table schema
+- [x] 4.3 Create drops table schema
+- [x] 4.4 Create drop_entries table schema with status enum
+- [x] 4.5 Create wishlists table schema
+- [x] 4.6 Create analytics_events table with JSONB metadata
+- [x] 4.7 Create marketing_drop_performance view
+- [x] 4.8 Configure Drizzle Kit for migrations
+- [x] 4.9 Generate initial migration and test db:push
 
 ## 5. Shopify Integration
 
