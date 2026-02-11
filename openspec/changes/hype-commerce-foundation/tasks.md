@@ -99,16 +99,16 @@
 
 ## 10. Page Routes
 
-- [ ] 10.1 Create homepage with dynamic hero and featured drops
-- [ ] 10.2 Create /collections/[handle] with filters and sorting
-- [ ] 10.3 Create /products/[handle] with gallery and size chart
-- [ ] 10.4 Create /drops calendar page
-- [ ] 10.5 Create /drops/[slug] with countdown and queue entry
-- [ ] 10.6 Create /archive vault with filtering
-- [ ] 10.7 Create /stories editorial listing
-- [ ] 10.8 Create /stories/[slug] article detail
-- [ ] 10.9 Create /account customer portal
-- [ ] 10.10 Create /cart page with upsells
+- [x] 10.1 Create homepage with dynamic hero and featured drops
+- [x] 10.2 Create /collections/[handle] with filters and sorting
+- [x] 10.3 Create /products/[handle] with gallery and size chart
+- [x] 10.4 Create /drops calendar page
+- [x] 10.5 Create /drops/[slug] with countdown and queue entry
+- [x] 10.6 Create /archive vault with filtering
+- [x] 10.7 Create /stories editorial listing
+- [x] 10.8 Create /stories/[slug] article detail
+- [x] 10.9 Create /account customer portal
+- [x] 10.10 Create /cart page with upsells
 
 ## 11. Performance & Security
 

@@ -74,11 +74,9 @@
 					<div class="flex items-center gap-2">
 						{#each testimonials as _, i}
 							<button
-								class="h-2 w-2 rounded-full transition-colors"
-								class:bg-primary={i === currentIndex}
-								class:bg-muted-foreground/30={i !== currentIndex}
+								class="h-2 w-2 rounded-full transition-colors {i === currentIndex ? 'bg-primary' : 'bg-muted-foreground/30'}"
 								onclick={() => (currentIndex = i)}
-								aria-label="Go to testimonial {i + 1}"
+								aria-label={`Go to testimonial ${i + 1}`}
 							></button>
 						{/each}
 					</div>
