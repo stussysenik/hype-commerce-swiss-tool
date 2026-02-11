@@ -1,16 +1,34 @@
 import type { PageServerLoad } from './$types.js';
+import { db } from '$lib/server/db/index.js';
+import { drops } from '$lib/server/db/schema.js';
+import { eq } from 'drizzle-orm';
+import { error } from '@sveltejs/kit';
 
 export const load: PageServerLoad = async ({ params }) => {
-	// In production: fetch from drops table + Sanity for story content
+	const [drop] = await db
+		.select()
+		.from(drops)
+		.where(eq(drops.slug, params.slug))
+		.limit(1)
+		.catch(() => []);
+
+	if (!drop) {
+		error(404, { message: `Drop "${params.slug}" not found` });
+	}
+
 	return {
 		drop: {
-			id: '',
-			title: params.slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
-			slug: params.slug,
-			description: 'Drop details will appear here when connected to the database.',
-			type: 'queue' as 'queue' | 'raffle' | 'fcfs',
-			status: 'upcoming' as 'upcoming' | 'live' | 'ended',
-			startsAt: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString(),
+			id: drop.id,
+			title: drop.title,
+			slug: drop.slug,
+			description: drop.description ?? 'Drop details will be available soon.',
+			type: drop.type,
+			status: (drop.status === 'live'
+				? 'live'
+				: drop.status === 'ended' || drop.status === 'cancelled'
+					? 'ended'
+					: 'upcoming') as 'upcoming' | 'live' | 'ended',
+			startsAt: drop.startsAt.toISOString(),
 			image: null as string | null,
 		},
 	};
