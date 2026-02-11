@@ -44,15 +44,15 @@
 
 ## 5. Shopify Integration
 
-- [ ] 5.1 Install @shopify/storefront-api-client
-- [ ] 5.2 Create Shopify client with environment configuration
-- [ ] 5.3 Implement getProduct query with variants and metafields
-- [ ] 5.4 Implement getProducts query with pagination
-- [ ] 5.5 Implement getCollection query with product filtering
-- [ ] 5.6 Implement searchProducts query
-- [ ] 5.7 Implement cart operations (create, get, add, update, remove)
-- [ ] 5.8 Set up TanStack Query with configured cache times
-- [ ] 5.9 Create cart store with persistence
+- [x] 5.1 Install @shopify/storefront-api-client
+- [x] 5.2 Create Shopify client with environment configuration
+- [x] 5.3 Implement getProduct query with variants and metafields
+- [x] 5.4 Implement getProducts query with pagination
+- [x] 5.5 Implement getCollection query with product filtering
+- [x] 5.6 Implement searchProducts query
+- [x] 5.7 Implement cart operations (create, get, add, update, remove)
+- [x] 5.8 Set up TanStack Query with configured cache times
+- [x] 5.9 Create cart store with persistence
 
 ## 6. tRPC API Layer
 
