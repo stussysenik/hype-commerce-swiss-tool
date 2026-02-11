@@ -227,6 +227,40 @@ Export analytics for marketing teams:
 curl /api/trpc/analytics.export.csv?startDate=2024-01-01&endDate=2024-01-31
 ```
 
+## A/B Testing
+
+### Recommended Tools
+
+| Tool                                                              | Best For                               | Pricing              |
+| ----------------------------------------------------------------- | -------------------------------------- | -------------------- |
+| [PostHog](https://posthog.com)                                    | Full-stack experimentation + analytics | Free tier available  |
+| [LaunchDarkly](https://launchdarkly.com)                          | Enterprise feature flags               | Paid                 |
+| [Statsig](https://statsig.com)                                    | Product experimentation                | Free tier available  |
+| [Vercel Edge Config](https://vercel.com/docs/storage/edge-config) | Simple flags at edge                   | Included with Vercel |
+| [Growthbook](https://growthbook.io)                               | Open-source experimentation            | Self-host or cloud   |
+
+### Implementation Pattern
+
+```typescript
+// src/lib/experiments.ts
+import { posthog } from 'posthog-js';
+
+export function getVariant(experimentId: string): string {
+	return posthog.getFeatureFlag(experimentId) ?? 'control';
+}
+
+// In component
+const heroVariant = getVariant('homepage-hero-2024');
+```
+
+### What to Test
+
+- **Drop pages**: Countdown timer styles, CTA button colors
+- **Product pages**: Image gallery layouts, size chart placement
+- **Cart**: Upsell positioning, urgency messaging
+- **Queue**: Position update frequency, waiting room design
+- **Checkout**: Express checkout prominence
+
 ## License
 
 MIT
