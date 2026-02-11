@@ -261,6 +261,52 @@ const heroVariant = getVariant('homepage-hero-2024');
 - **Queue**: Position update frequency, waiting room design
 - **Checkout**: Express checkout prominence
 
+## Future Directions
+
+### Planned Enhancements
+
+| Feature                  | Description                                    | Complexity |
+| ------------------------ | ---------------------------------------------- | ---------- |
+| **PWA Support**          | Offline access, push notifications for drops   | Medium     |
+| **Internationalization** | Multi-language, multi-currency support         | Medium     |
+| **Loyalty Program**      | Points system, tier upgrades, exclusive access | High       |
+| **AR Try-On**            | Virtual product try-on via WebXR               | High       |
+| **Live Shopping**        | Real-time video drops with chat                | High       |
+| **Mobile App**           | Native iOS/Android via Capacitor               | High       |
+
+### Performance Optimizations
+
+- **Edge caching**: Move to Cloudflare Workers for global edge deployment
+- **Image optimization**: Implement AVIF/WebP with blur-up placeholders
+- **Partial hydration**: Use Svelte's streaming SSR for faster TTFB
+- **Database**: Add read replicas and connection pooling (PgBouncer)
+
+### Integration Ideas
+
+- **Discord bot**: Drop notifications, queue position updates
+- **Slack integration**: Marketing alerts, sales notifications
+- **Zapier/Make**: Workflow automation for order processing
+- **Klaviyo**: Advanced email marketing automation
+- **Affirm/Klarna**: Buy now, pay later integration
+
+### Scaling Considerations
+
+For 100K+ concurrent users during drops:
+
+1. **Redis Cluster**: Horizontal scaling for queue system
+2. **Database sharding**: Partition drop_entries by drop_id
+3. **CDN warming**: Pre-cache product pages before drops
+4. **Queue fairness**: Server-side timestamps to prevent manipulation
+5. **DDoS protection**: Cloudflare or AWS Shield
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
 ## License
 
 MIT
