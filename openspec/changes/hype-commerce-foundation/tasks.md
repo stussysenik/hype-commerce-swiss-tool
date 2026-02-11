@@ -1,13 +1,13 @@
 ## 1. Development Environment Setup
 
-- [ ] 1.1 Create flake.nix with Node.js 20, pnpm 9, PostgreSQL 16, Redis 7
-- [ ] 1.2 Create .env.example with all required environment variables
-- [ ] 1.3 Initialize SvelteKit project with TypeScript
-- [ ] 1.4 Configure Tailwind CSS v4 with custom design tokens
-- [ ] 1.5 Set up ESLint with svelte, tailwindcss, and drizzle plugins
-- [ ] 1.6 Configure Prettier with svelte and tailwindcss plugins
-- [ ] 1.7 Set up Husky with pre-commit (lint-staged) and pre-push hooks
-- [ ] 1.8 Create package.json scripts (dev, build, lint, format, db:*)
+- [x] 1.1 Create flake.nix with Node.js 20, pnpm 9, PostgreSQL 16, Redis 7
+- [x] 1.2 Create .env.example with all required environment variables
+- [x] 1.3 Initialize SvelteKit project with TypeScript
+- [x] 1.4 Configure Tailwind CSS v4 with custom design tokens
+- [x] 1.5 Set up ESLint with svelte, tailwindcss, and drizzle plugins
+- [x] 1.6 Configure Prettier with svelte and tailwindcss plugins
+- [x] 1.7 Set up Husky with pre-commit (lint-staged) and pre-push hooks
+- [x] 1.8 Create package.json scripts (dev, build, lint, format, db:*)
 
 ## 2. Component Library Foundation
 

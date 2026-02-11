@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+
+/*
+ * Hype Commerce - Custom Design Tokens
+ * Override these CSS custom properties for brand-specific theming
+ */
+
+@theme {
+	/* Brand Colors */
+	--color-brand: #000000;
+	--color-brand-accent: #ff3e00;
+	--color-brand-muted: #666666;
+
+	/* Surface Colors */
+	--color-surface: #ffffff;
+	--color-surface-elevated: #f5f5f5;
+	--color-surface-overlay: rgba(0, 0, 0, 0.5);
+
+	/* Text Colors */
+	--color-text-primary: #000000;
+	--color-text-secondary: #666666;
+	--color-text-inverse: #ffffff;
+
+	/* Status Colors */
+	--color-success: #22c55e;
+	--color-warning: #eab308;
+	--color-error: #ef4444;
+	--color-info: #3b82f6;
+
+	/* Drop Status */
+	--color-drop-live: #ef4444;
+	--color-drop-upcoming: #eab308;
+	--color-drop-ended: #666666;
+
+	/* Spacing Scale */
+	--spacing-section: 6rem;
+	--spacing-section-sm: 3rem;
+
+	/* Typography */
+	--font-display: 'Inter', system-ui, sans-serif;
+	--font-body: 'Inter', system-ui, sans-serif;
+	--font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+	/* Border Radius */
+	--radius-sm: 0.25rem;
+	--radius-md: 0.5rem;
+	--radius-lg: 1rem;
+	--radius-full: 9999px;
+
+	/* Transitions */
+	--duration-fast: 150ms;
+	--duration-normal: 250ms;
+	--duration-slow: 500ms;
+
+	/* Z-index Scale */
+	--z-dropdown: 50;
+	--z-sticky: 100;
+	--z-overlay: 200;
+	--z-modal: 300;
+	--z-toast: 400;
+}
+
+/* OLED-optimized dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-brand: #ffffff;
+		--color-brand-muted: #999999;
+
+		--color-surface: #000000;
+		--color-surface-elevated: #111111;
+		--color-surface-overlay: rgba(0, 0, 0, 0.8);
+
+		--color-text-primary: #ffffff;
+		--color-text-secondary: #999999;
+		--color-text-inverse: #000000;
+	}
+}
+
+/* Base styles */
+html {
+	font-family: var(--font-body);
+	color: var(--color-text-primary);
+	background-color: var(--color-surface);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
