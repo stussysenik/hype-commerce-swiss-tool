@@ -56,15 +56,15 @@
 
 ## 6. tRPC API Layer
 
-- [ ] 6.1 Set up tRPC with SvelteKit adapter
-- [ ] 6.2 Create drops router with queue.join, queue.status, queue.leave
-- [ ] 6.3 Create drops router with raffle.enter, raffle.status
-- [ ] 6.4 Create user router with wishlist operations
-- [ ] 6.5 Create user router with tier.get
-- [ ] 6.6 Create analytics router with track.event
-- [ ] 6.7 Create analytics router with export.csv
-- [ ] 6.8 Implement authentication middleware
-- [ ] 6.9 Create /api/health endpoint
+- [x] 6.1 Set up tRPC with SvelteKit adapter
+- [x] 6.2 Create drops router with queue.join, queue.status, queue.leave
+- [x] 6.3 Create drops router with raffle.enter, raffle.status
+- [x] 6.4 Create user router with wishlist operations
+- [x] 6.5 Create user router with tier.get
+- [x] 6.6 Create analytics router with track.event
+- [x] 6.7 Create analytics router with export.csv
+- [x] 6.8 Implement authentication middleware
+- [x] 6.9 Create /api/health endpoint
 
 ## 7. Redis Queue System
 
