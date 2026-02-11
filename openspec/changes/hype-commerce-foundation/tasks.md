@@ -11,14 +11,14 @@
 
 ## 2. Component Library Foundation
 
-- [ ] 2.1 Install and configure shadcn-svelte with Bits UI
-- [ ] 2.2 Add base components: Button, Input, Label, Card, Badge
-- [ ] 2.3 Add form components: Checkbox, Select, Textarea, Form
-- [ ] 2.4 Add overlay components: Dialog, Drawer, Popover, Toast
-- [ ] 2.5 Add navigation components: Tabs, Accordion, Dropdown Menu
-- [ ] 2.6 Initialize Storybook 8 with Svelte CSF
-- [ ] 2.7 Create stories for all base components
-- [ ] 2.8 Configure Storybook accessibility addon
+- [x] 2.1 Install and configure shadcn-svelte with Bits UI
+- [x] 2.2 Add base components: Button, Input, Label, Card, Badge
+- [x] 2.3 Add form components: Checkbox, Select, Textarea, Form
+- [x] 2.4 Add overlay components: Dialog, Drawer, Popover, Toast
+- [x] 2.5 Add navigation components: Tabs, Accordion, Dropdown Menu
+- [x] 2.6 Initialize Storybook 8 with Svelte CSF
+- [x] 2.7 Create stories for all base components
+- [x] 2.8 Configure Storybook accessibility addon
 
 ## 3. Section Components
 
