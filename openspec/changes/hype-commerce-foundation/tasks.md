@@ -112,14 +112,14 @@
 
 ## 11. Performance & Security
 
-- [ ] 11.1 Configure image optimization with Cloudinary
-- [ ] 11.2 Implement lazy loading with blur-up placeholders
-- [ ] 11.3 Set up route-based code splitting
-- [ ] 11.4 Configure caching headers (static, product, collection)
-- [ ] 11.5 Implement rate limiting middleware (100 req/min general)
-- [ ] 11.6 Add Turnstile CAPTCHA for drop entries
-- [ ] 11.7 Implement honeypot fields on forms
-- [ ] 11.8 Configure session tokens with 15-minute expiry
+- [x] 11.1 Configure image optimization with Cloudinary
+- [x] 11.2 Implement lazy loading with blur-up placeholders
+- [x] 11.3 Set up route-based code splitting
+- [x] 11.4 Configure caching headers (static, product, collection)
+- [x] 11.5 Implement rate limiting middleware (100 req/min general)
+- [x] 11.6 Add Turnstile CAPTCHA for drop entries
+- [x] 11.7 Implement honeypot fields on forms
+- [x] 11.8 Configure session tokens with 15-minute expiry
 
 ## 12. Deployment & Monitoring
 
